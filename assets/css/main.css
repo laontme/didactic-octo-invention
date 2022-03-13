@@ -26,7 +26,7 @@
 }
 
 .header {
-    border-bottom: 2px solid #d0d0d0;
+    border-bottom: 2px solid var(--secondary);
 }
 
 .header__logo {
@@ -44,12 +44,12 @@
 }
 
 .header__arrow {
-    color: #007EFF;
+    color: var(--primary);
     font-size: 2rem;
 }
 
 .nav__link {
-    color: #38455D;
+    color: var(--foreground-dark);
     text-decoration: none;
     font-weight: bold;
 }
@@ -66,8 +66,8 @@
 
 .badge {
     position: absolute;
-    color: white;
-    background: red;
+    color: var(--foreground-light);
+    background: var(--danger);
     border-radius: 50px;
     padding: 3px;
 }
@@ -100,7 +100,7 @@
 }
 
 .header__reset {
-    color: #007EFF;
+    color: var(--primary);
     text-decoration: none;
     font-weight: bold;
 }
@@ -118,7 +118,7 @@
 }
 
 .report {
-    border: 2px solid #d0d0d0;
+    border: 2px solid var(--secondary);
     border-radius: 5px;
     padding: 40px;
 }
@@ -131,12 +131,12 @@
 .button {
     display: flex;
     flex-direction: column;
-    background: #007EFF;
+    background: var(--primary);
     width: 100%;
     padding: 20px;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: var(--foreground-light);
     font-weight: bold;
 }
 
@@ -149,7 +149,7 @@
 }
 
 .button_disabled {
-    background: #d0d0d0;
+    background: var(--secondary);
     cursor: not-allowed;
 }
 
@@ -162,10 +162,10 @@
 }
 
 .report__title {
-    color: #38455D;
+    color: var(--foreground-dark);
     font-weight: bold;
     padding-bottom: 10px;
-    border-bottom: 1.5px solid #d0d0d0;
+    border-bottom: 1.5px solid var(--secondary);
     font-size: 1.1rem;
     margin-bottom: 40px;
 }
@@ -195,7 +195,7 @@
 }
 
 .ritem__link {
-    color: #007EFF;
+    color: var(--primary);
     text-decoration: none;
 }
 
@@ -237,11 +237,11 @@
 }
 
 .rcounter__arrow_down {
-    color: #007EFF;
+    color: var(--primary);
 }
 
 .report__wrapper > * {
-    border-bottom: #d0d0d0 1px solid;
+    border-bottom: var(--secondary) 1px solid;
     padding: 10px 0;
 }
 
@@ -257,7 +257,7 @@
 .checkbox {
     width: 50px;
     height: 50px;
-    border: 2.5px #d0d0d0 solid;
+    border: 2.5px var(--secondary) solid;
     border-radius: 5px;
 }
 

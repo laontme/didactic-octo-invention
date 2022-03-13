@@ -6,3 +6,11 @@
     font-family: "Montserrat", sans-serif;
     box-sizing: border-box;
 }
+
+:root {
+    --primary: var(--oc-blue-6);
+    --secondary: var(--oc-gray-4);
+    --foreground-dark: var(--oc-gray-7);
+    --foreground-light: var(--oc-white);
+    --danger: var(--oc-red-7);
+}
