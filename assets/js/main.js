@@ -8,6 +8,22 @@ reports.forEach((report) => {
             changed(report);
         });
     });
+
+    const selectAll = report.querySelector(".report__summary .checkbox__original");
+
+    selectAll.addEventListener("change", (e) => {
+        const checkboxes = report.querySelectorAll(".report__wrapper .checkbox__original");
+
+        if (e.target.checked === true) {
+            checkboxes.forEach((checkbox) => {
+                checkbox.checked = true;
+            });
+        } else {
+            checkboxes.forEach((checkbox) => {
+                checkbox.checked = false;
+            });
+        }
+    });
 });
 
 function changed(report) {
@@ -46,3 +62,5 @@ document.querySelector(".main__reset").addEventListener("click", (e) => {
         changed(report);
     });
 });
+
+
