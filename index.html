@@ -13,293 +13,96 @@
     <link href="./assets/css/main.css" rel="stylesheet">
 </head>
 <body>
-<div class="_wrapper">
-    <header class="header">
-        <div class="_container header__container">
-            <div class="header__logo">
-                <img src="./assets/img/logo.svg" alt="logo" class="header__logoimg" height="50" width="50">
-            </div>
-            <nav class="header__nav">
-                <div class="header__left">
-                    <p class="nav__item">
-                        <a class="nav__link" href="#">Проекты</a>
-                    </p>
-                    <p class="nav__item">
-                        <a class="nav__link" href="#">Пространства</a>
-                    </p>
-                    <p class="nav__item">
-                        <a class="nav__link" href="#">Грузы</a>
-                    </p>
-                    <p class="nav__item">
-                        <a class="nav__link nav__link_active" href="#">Отчеты</a>
-                    </p>
-                </div>
-                <div class="header__right">
-                    <p class="nav__item">
-                        <a href="#" class="nav__link">
-                            <span class="nav__slidable">
-                                <span>ru</span>
-                                <i class='bx bx-chevron-down  header__arrow'></i>
-                            </span>
-                        </a>
-                    </p>
-                    <p class="nav__item">
-                        <a href="#" class="nav__link">
-                            <i class='bx bxs-bell nav__notif'>
-                                <span class="badge nav__badge">99+</span>
-                            </i>
-                        </a>
-                    </p>
-                    <p class="nav__item nav__item_last">
-                        <a href="#" class="nav__link">
-                            <span class="nav__slidable">
-                                <span>kirill@garpix.com</span>
-                                <i class='bx bx-chevron-down header__arrow'></i>
-                            </span>
-                        </a>
-                    </p>
-                </div>
-            </nav>
-        </div>
-    </header>
-    <main class="main">
-        <div class="main__wrapper">
-            <header class="main__header">
-                <p class="header__download">Скачать отчет</p>
-                <a href="#" class="header__reset">Сбросить все</a>
-            </header>
+<header class="header">
+    <div class="header__container">
+        <img class="header__logo" src="assets/img/logo.svg" alt="logo">
+        <nav class="header__nav">
+            <ul class="header__section">
+                <li class="nav__item">
+                    <a class="nav__link" href="#">Проекты</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#">Пространства</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#">Грузы</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link nav__link--active" href="#">Отчеты</a>
+                </li>
+            </ul>
+            <ul class="header__section">
+                <li class="nav__item">
+                    <a href="#" class="nav__link nav__link--foldable">ru</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link nav__link--badge"><i class="bx bxs-bell bx-sm"></i></a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link nav__link--foldable">kirill@garpix.com</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main class="main">
+    <div class="main__container">
+        <header class="main__header">
+            <p class="main__download">Скачать отчет</p>
+            <button href="#" class="main__reset">Сбросить все</button>
+        </header>
 
-            <section class="main__reports">
-                <div class="main__col">
-                    <div class="report">
-                        <div class="report__check">
-                            <div class="checkbox"></div>
-<!--                            <i class='report__icon bx bx-lg bx-square'></i>-->
-                            <img class="report__icon" width="80" src="./assets/img/icon.svg" alt="icon">
-<!--                            <i class='report__icon bx bx-lg bx-collection'></i>-->
+        <section class="main__reports">
+            <div class="main__col">
+                <div class="report">
+                    <div class="report__check">
+                        <label class="checkbox__label">
+                            <input class="checkbox__original" type="checkbox">
+                            <span class="checkbox__pseudo"></span>
+                        </label>
+                        <img class="report__icon" width="80" src="./assets/img/icon.svg" alt="icon">
+                    </div>
+                    <div class="report__title">
+                        Грузовик с закрытым кузовом Man TGS 18.320
+                    </div>
+                    <div class="report__item ritem ritem--top">
+                        <div class="ritem__check">
+                            <label class="checkbox">
+                                <input class="checkbox__original" type="checkbox">
+                                <span class="checkbox__pseudo"></span>
+                                <span class="checkbox__label">Отчет для ГП</span>
+                            </label>
                         </div>
-                        <div class="report__title">
-                            Грузовик с закрытым кузовом Man TGS 18.320
-                        </div>
-                        <div class="report__item ritem">
-                            <div class="ritem__check">
-                                <input type="checkbox">
-                                <label>Отчет для ГП</label>
+                        <div class="ritem__download">
+                            <div class="ritem__pdf">
+                                <a class="ritem__link" href="#">
+                                    <span>Скачать PDF</span>
+                                    <i class='bx bx-download'></i>
+                                </a>
                             </div>
-                            <div class="ritem__download">
-                                <div class="ritem__pdf">
-                                    <a class="ritem__link" href="#">
-                                        <span>Скачать PDF</span>
-                                        <i class='bx bx-download'></i>
-                                    </a>
-                                </div>
-                                <div class="ritem__excel">
-                                    <a class="ritem__link" href="#">
-                                        <span>Скачать Excel</span>
-                                        <i class='bx bx-download'></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="report__wrapper">
-                            <div class="report__counter rcounter">
-                                <div class="rcounter__check">
-                                    <div class="rcounter__left">
-                                        <input type="checkbox">
-                                        <label>
-                                            <b>Отчеты для паллет</b>
-                                            <i class='rcounter__arrow bx bx-chevron-up'></i>
-                                        </label>
-                                    </div>
-                                    <div class="rcounter__right">
-                                        <p>Выбрано 0</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="report__item ritem ritem_low">
-                                <div class="ritem__check">
-                                    <input type="checkbox">
-                                    <label>Отчет для ГП</label>
-                                </div>
-                                <div class="ritem__download">
-                                    <div class="ritem__pdf">
-                                        <a class="ritem__link" href="#">
-                                            <span>Скачать PDF</span>
-                                            <i class='bx bx-download'></i>
-                                        </a>
-                                    </div>
-                                    <div class="ritem__excel">
-                                        <a class="ritem__link" href="#">
-                                            <span>Скачать Excel</span>
-                                            <i class='bx bx-download'></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="report__item ritem ritem_low">
-                                <div class="ritem__check">
-                                    <input type="checkbox">
-                                    <label>Отчет для ГП</label>
-                                </div>
-                                <div class="ritem__download">
-                                    <div class="ritem__pdf">
-                                        <a class="ritem__link" href="#">
-                                            <span>Скачать PDF</span>
-                                            <i class='bx bx-download'></i>
-                                        </a>
-                                    </div>
-                                    <div class="ritem__excel">
-                                        <a class="ritem__link" href="#">
-                                            <span>Скачать Excel</span>
-                                            <i class='bx bx-download'></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="report__item ritem ritem_low">
-                                <div class="ritem__check">
-                                    <input type="checkbox">
-                                    <label>Отчет для ГП</label>
-                                </div>
-                                <div class="ritem__download">
-                                    <div class="ritem__pdf">
-                                        <a class="ritem__link" href="#">
-                                            <span>Скачать PDF</span>
-                                            <i class='bx bx-download'></i>
-                                        </a>
-                                    </div>
-                                    <div class="ritem__excel">
-                                        <a class="ritem__link" href="#">
-                                            <span>Скачать Excel</span>
-                                            <i class='bx bx-download'></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="report__item ritem ritem_low">
-                                <div class="ritem__check">
-                                    <input type="checkbox">
-                                    <label>Отчет для ГП</label>
-                                </div>
-                                <div class="ritem__download">
-                                    <div class="ritem__pdf">
-                                        <a class="ritem__link" href="#">
-                                            <span>Скачать PDF</span>
-                                            <i class='bx bx-download'></i>
-                                        </a>
-                                    </div>
-                                    <div class="ritem__excel">
-                                        <a class="ritem__link" href="#">
-                                            <span>Скачать Excel</span>
-                                            <i class='bx bx-download'></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="report__item ritem ritem_low">
-                                <div class="ritem__check">
-                                    <input type="checkbox">
-                                    <label>Отчет для ГП</label>
-                                </div>
-                                <div class="ritem__download">
-                                    <div class="ritem__pdf">
-                                        <a class="ritem__link" href="#">
-                                            <span>Скачать PDF</span>
-                                            <i class='bx bx-download'></i>
-                                        </a>
-                                    </div>
-                                    <div class="ritem__excel">
-                                        <a class="ritem__link" href="#">
-                                            <span>Скачать Excel</span>
-                                            <i class='bx bx-download'></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="report__item ritem ritem_low">
-                                <div class="ritem__check">
-                                    <input type="checkbox">
-                                    <label>Отчет для ГП</label>
-                                </div>
-                                <div class="ritem__download">
-                                    <div class="ritem__pdf">
-                                        <a class="ritem__link" href="#">
-                                            <span>Скачать PDF</span>
-                                            <i class='bx bx-download'></i>
-                                        </a>
-                                    </div>
-                                    <div class="ritem__excel">
-                                        <a class="ritem__link" href="#">
-                                            <span>Скачать Excel</span>
-                                            <i class='bx bx-download'></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="report__item ritem ritem_low">
-                                <div class="ritem__check">
-                                    <input type="checkbox">
-                                    <label>Отчет для ГП</label>
-                                </div>
-                                <div class="ritem__download">
-                                    <div class="ritem__pdf">
-                                        <a class="ritem__link" href="#">
-                                            <span>Скачать PDF</span>
-                                            <i class='bx bx-download'></i>
-                                        </a>
-                                    </div>
-                                    <div class="ritem__excel">
-                                        <a class="ritem__link" href="#">
-                                            <span>Скачать Excel</span>
-                                            <i class='bx bx-download'></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="report__item ritem">
-                                <div class="ritem__check">
-                                    <input type="checkbox">
-                                    <label>Отчет для ГП</label>
-                                </div>
-                                <div class="ritem__download">
-                                    <div class="ritem__pdf">
-                                        <a class="ritem__link" href="#">
-                                            <span>Скачать PDF</span>
-                                            <i class='bx bx-download'></i>
-                                        </a>
-                                    </div>
-                                    <div class="ritem__excel">
-                                        <a class="ritem__link" href="#">
-                                            <span>Скачать Excel</span>
-                                            <i class='bx bx-download'></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="report__download">
-                            <div class="button button_disabled">
-                                Скачать PDF отчет
-                            </div>
-                            <div class="button button_disabled">
-                                Скачать Excel отчет
+                            <div class="ritem__excel">
+                                <a class="ritem__link" href="#">
+                                    <span>Скачать Excel</span>
+                                    <i class='bx bx-download'></i>
+                                </a>
                             </div>
                         </div>
                     </div>
-                    <div class="report">
-                        <div class="report__check">
-                            <div class="checkbox"></div>
-                            <!--                            <i class='report__icon bx bx-lg bx-square'></i>-->
-                            <img class="report__icon" width="80" src="./assets/img/icon.svg" alt="icon">
-                            <!--                            <i class='report__icon bx bx-lg bx-collection'></i>-->
-                        </div>
-                        <div class="report__title">
-                            Грузовик с закрытым кузовом Man TGS 18.320
-                        </div>
+                    <details class="report__wrapper">
+                        <summary class="report__summary">
+                            <label class="checkbox">
+                                <input class="checkbox__original" type="checkbox">
+                                <span class="checkbox__pseudo"></span>
+                                <span class="checkbox__label">Отчеты для паллет</span>
+                            </label>
+                        </summary>
                         <div class="report__item ritem">
                             <div class="ritem__check">
-                                <input type="checkbox">
-                                <label>Отчет для ГП</label>
+                                <label class="checkbox">
+                                    <input class="checkbox__original" type="checkbox">
+                                    <span class="checkbox__pseudo"></span>
+                                    <span class="checkbox__label">Отчет для ГП</span>
+                                </label>
                             </div>
                             <div class="ritem__download">
                                 <div class="ritem__pdf">
@@ -316,519 +119,181 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="report__wrapper report__wrapper_closed">
-                            <div class="report__counter rcounter">
-                                <div class="rcounter__check">
-                                    <div class="rcounter__left">
-                                        <input type="checkbox">
-                                        <label>
-                                            <b>Отчеты для паллет</b>
-                                            <i class='rcounter__arrow rcounter__arrow_down bx bx-chevron-down'></i>
-                                        </label>
-                                    </div>
-                                    <div class="rcounter__right">
-                                        <p>Выбрано 0</p>
-                                    </div>
+                        <div class="report__item ritem">
+                            <div class="ritem__check">
+                                <label class="checkbox">
+                                    <input class="checkbox__original" type="checkbox">
+                                    <span class="checkbox__pseudo"></span>
+                                    <span class="checkbox__label">Отчет для ГП</span>
+                                </label>
+                            </div>
+                            <div class="ritem__download">
+                                <div class="ritem__pdf">
+                                    <a class="ritem__link" href="#">
+                                        <span>Скачать PDF</span>
+                                        <i class='bx bx-download'></i>
+                                    </a>
+                                </div>
+                                <div class="ritem__excel">
+                                    <a class="ritem__link" href="#">
+                                        <span>Скачать Excel</span>
+                                        <i class='bx bx-download'></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>
-                        <div class="report__download">
-                            <div class="button">
-                                Скачать PDF отчет
+                        <div class="report__item ritem">
+                            <div class="ritem__check">
+                                <label class="checkbox">
+                                    <input class="checkbox__original" type="checkbox">
+                                    <span class="checkbox__pseudo"></span>
+                                    <span class="checkbox__label">Отчет для ГП</span>
+                                </label>
                             </div>
-                            <div class="button">
-                                Скачать Excel отчет
+                            <div class="ritem__download">
+                                <div class="ritem__pdf">
+                                    <a class="ritem__link" href="#">
+                                        <span>Скачать PDF</span>
+                                        <i class='bx bx-download'></i>
+                                    </a>
+                                </div>
+                                <div class="ritem__excel">
+                                    <a class="ritem__link" href="#">
+                                        <span>Скачать Excel</span>
+                                        <i class='bx bx-download'></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
+                        <div class="report__item ritem">
+                            <div class="ritem__check">
+                                <label class="checkbox">
+                                    <input class="checkbox__original" type="checkbox">
+                                    <span class="checkbox__pseudo"></span>
+                                    <span class="checkbox__label">Отчет для ГП</span>
+                                </label>
+                            </div>
+                            <div class="ritem__download">
+                                <div class="ritem__pdf">
+                                    <a class="ritem__link" href="#">
+                                        <span>Скачать PDF</span>
+                                        <i class='bx bx-download'></i>
+                                    </a>
+                                </div>
+                                <div class="ritem__excel">
+                                    <a class="ritem__link" href="#">
+                                        <span>Скачать Excel</span>
+                                        <i class='bx bx-download'></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="report__item ritem">
+                            <div class="ritem__check">
+                                <label class="checkbox">
+                                    <input class="checkbox__original" type="checkbox">
+                                    <span class="checkbox__pseudo"></span>
+                                    <span class="checkbox__label">Отчет для ГП</span>
+                                </label>
+                            </div>
+                            <div class="ritem__download">
+                                <div class="ritem__pdf">
+                                    <a class="ritem__link" href="#">
+                                        <span>Скачать PDF</span>
+                                        <i class='bx bx-download'></i>
+                                    </a>
+                                </div>
+                                <div class="ritem__excel">
+                                    <a class="ritem__link" href="#">
+                                        <span>Скачать Excel</span>
+                                        <i class='bx bx-download'></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="report__item ritem">
+                            <div class="ritem__check">
+                                <label class="checkbox">
+                                    <input class="checkbox__original" type="checkbox">
+                                    <span class="checkbox__pseudo"></span>
+                                    <span class="checkbox__label">Отчет для ГП</span>
+                                </label>
+                            </div>
+                            <div class="ritem__download">
+                                <div class="ritem__pdf">
+                                    <a class="ritem__link" href="#">
+                                        <span>Скачать PDF</span>
+                                        <i class='bx bx-download'></i>
+                                    </a>
+                                </div>
+                                <div class="ritem__excel">
+                                    <a class="ritem__link" href="#">
+                                        <span>Скачать Excel</span>
+                                        <i class='bx bx-download'></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="report__item ritem">
+                            <div class="ritem__check">
+                                <label class="checkbox">
+                                    <input class="checkbox__original" type="checkbox">
+                                    <span class="checkbox__pseudo"></span>
+                                    <span class="checkbox__label">Отчет для ГП</span>
+                                </label>
+                            </div>
+                            <div class="ritem__download">
+                                <div class="ritem__pdf">
+                                    <a class="ritem__link" href="#">
+                                        <span>Скачать PDF</span>
+                                        <i class='bx bx-download'></i>
+                                    </a>
+                                </div>
+                                <div class="ritem__excel">
+                                    <a class="ritem__link" href="#">
+                                        <span>Скачать Excel</span>
+                                        <i class='bx bx-download'></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="report__item ritem">
+                            <div class="ritem__check">
+                                <label class="checkbox">
+                                    <input class="checkbox__original" type="checkbox">
+                                    <span class="checkbox__pseudo"></span>
+                                    <span class="checkbox__label">Отчет для ГП</span>
+                                </label>
+                            </div>
+                            <div class="ritem__download">
+                                <div class="ritem__pdf">
+                                    <a class="ritem__link" href="#">
+                                        <span>Скачать PDF</span>
+                                        <i class='bx bx-download'></i>
+                                    </a>
+                                </div>
+                                <div class="ritem__excel">
+                                    <a class="ritem__link" href="#">
+                                        <span>Скачать Excel</span>
+                                        <i class='bx bx-download'></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </details>
+                    <div class="report__download">
+                        <button class="button" disabled>
+                            Скачать PDF отчет
+                        </button>
+                        <button class="button" disabled>
+                            Скачать Excel отчет
+                        </button>
                     </div>
                 </div>
-                <div class="main__col">
-                    <div class="report">
-                        <div class="report__check">
-                            <div class="checkbox"></div>
-                            <!--                            <i class='report__icon bx bx-lg bx-square'></i>-->
-                            <img class="report__icon" width="80" src="./assets/img/icon.svg" alt="icon">
-                            <!--                            <i class='report__icon bx bx-lg bx-collection'></i>-->
-                        </div>
-                        <div class="report__title">
-                            Контейнер морской
-                        </div>
-                        <div class="report__item ritem ritem_bottom">
-                            <div class="ritem__check">
-                                <input type="checkbox">
-                                <label>Отчет для ГП</label>
-                            </div>
-                            <div class="ritem__download">
-                                <div class="ritem__pdf">
-                                    <a class="ritem__link" href="#">
-                                        <span>Скачать PDF</span>
-                                        <i class='bx bx-download'></i>
-                                    </a>
-                                </div>
-                                <div class="ritem__excel">
-                                    <a class="ritem__link" href="#">
-                                        <span>Скачать Excel</span>
-                                        <i class='bx bx-download'></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-<!--                        <div class="report__wrapper report__wrapper_closed">-->
-<!--                            <div class="report__counter rcounter">-->
-<!--                                <div class="rcounter__check">-->
-<!--                                    <div class="rcounter__left">-->
-<!--                                        <input type="checkbox">-->
-<!--                                        <label>-->
-<!--                                            <b>Отчеты для паллет</b>-->
-<!--                                            <i class='rcounter__arrow rcounter__arrow_down bx bx-chevron-down'></i>-->
-<!--                                        </label>-->
-<!--                                    </div>-->
-<!--                                    <div class="rcounter__right">-->
-<!--                                        <p>Выбрано 0</p>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-                        <div class="report__download">
-                            <div class="button">
-                                Скачать PDF отчет
-                            </div>
-                            <div class="button">
-                                Скачать Excel отчет
-                            </div>
-                        </div>
-                    </div>
-                    <div class="report">
-                        <div class="report__check">
-                            <div class="checkbox"></div>
-                            <!--                            <i class='report__icon bx bx-lg bx-square'></i>-->
-                            <img class="report__icon" width="80" src="./assets/img/icon.svg" alt="icon">
-                            <!--                            <i class='report__icon bx bx-lg bx-collection'></i>-->
-                        </div>
-                        <div class="report__title">
-                            Грузовик с закрытым кузовом Man TGS 18.320
-                        </div>
-                        <div class="report__item ritem">
-                            <div class="ritem__check">
-                                <input type="checkbox">
-                                <label>Отчет для ГП</label>
-                            </div>
-                            <div class="ritem__download">
-                                <div class="ritem__pdf">
-                                    <a class="ritem__link" href="#">
-                                        <span>Скачать PDF</span>
-                                        <i class='bx bx-download'></i>
-                                    </a>
-                                </div>
-                                <div class="ritem__excel">
-                                    <a class="ritem__link" href="#">
-                                        <span>Скачать Excel</span>
-                                        <i class='bx bx-download'></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="report__wrapper">
-                            <div class="report__counter rcounter">
-                                <div class="rcounter__check">
-                                    <div class="rcounter__left">
-                                        <input type="checkbox">
-                                        <label>
-                                            <b>Отчеты для паллет</b>
-                                            <i class='rcounter__arrow bx bx-chevron-up'></i>
-                                        </label>
-                                    </div>
-                                    <div class="rcounter__right">
-                                        <p>Выбрано 0</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="report__item ritem ritem_low">
-                                <div class="ritem__check">
-                                    <input type="checkbox">
-                                    <label>Отчет для ГП</label>
-                                </div>
-                                <div class="ritem__download">
-                                    <div class="ritem__pdf">
-                                        <a class="ritem__link" href="#">
-                                            <span>Скачать PDF</span>
-                                            <i class='bx bx-download'></i>
-                                        </a>
-                                    </div>
-                                    <div class="ritem__excel">
-                                        <a class="ritem__link" href="#">
-                                            <span>Скачать Excel</span>
-                                            <i class='bx bx-download'></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="report__item ritem ritem_low">
-                                <div class="ritem__check">
-                                    <input type="checkbox">
-                                    <label>Отчет для ГП</label>
-                                </div>
-                                <div class="ritem__download">
-                                    <div class="ritem__pdf">
-                                        <a class="ritem__link" href="#">
-                                            <span>Скачать PDF</span>
-                                            <i class='bx bx-download'></i>
-                                        </a>
-                                    </div>
-                                    <div class="ritem__excel">
-                                        <a class="ritem__link" href="#">
-                                            <span>Скачать Excel</span>
-                                            <i class='bx bx-download'></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="report__item ritem ritem_low">
-                                <div class="ritem__check">
-                                    <input type="checkbox">
-                                    <label>Отчет для ГП</label>
-                                </div>
-                                <div class="ritem__download">
-                                    <div class="ritem__pdf">
-                                        <a class="ritem__link" href="#">
-                                            <span>Скачать PDF</span>
-                                            <i class='bx bx-download'></i>
-                                        </a>
-                                    </div>
-                                    <div class="ritem__excel">
-                                        <a class="ritem__link" href="#">
-                                            <span>Скачать Excel</span>
-                                            <i class='bx bx-download'></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="report__item ritem ritem_low">
-                                <div class="ritem__check">
-                                    <input type="checkbox">
-                                    <label>Отчет для ГП</label>
-                                </div>
-                                <div class="ritem__download">
-                                    <div class="ritem__pdf">
-                                        <a class="ritem__link" href="#">
-                                            <span>Скачать PDF</span>
-                                            <i class='bx bx-download'></i>
-                                        </a>
-                                    </div>
-                                    <div class="ritem__excel">
-                                        <a class="ritem__link" href="#">
-                                            <span>Скачать Excel</span>
-                                            <i class='bx bx-download'></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="report__item ritem ritem_low">
-                                <div class="ritem__check">
-                                    <input type="checkbox">
-                                    <label>Отчет для ГП</label>
-                                </div>
-                                <div class="ritem__download">
-                                    <div class="ritem__pdf">
-                                        <a class="ritem__link" href="#">
-                                            <span>Скачать PDF</span>
-                                            <i class='bx bx-download'></i>
-                                        </a>
-                                    </div>
-                                    <div class="ritem__excel">
-                                        <a class="ritem__link" href="#">
-                                            <span>Скачать Excel</span>
-                                            <i class='bx bx-download'></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="report__item ritem ritem_low">
-                                <div class="ritem__check">
-                                    <input type="checkbox">
-                                    <label>Отчет для ГП</label>
-                                </div>
-                                <div class="ritem__download">
-                                    <div class="ritem__pdf">
-                                        <a class="ritem__link" href="#">
-                                            <span>Скачать PDF</span>
-                                            <i class='bx bx-download'></i>
-                                        </a>
-                                    </div>
-                                    <div class="ritem__excel">
-                                        <a class="ritem__link" href="#">
-                                            <span>Скачать Excel</span>
-                                            <i class='bx bx-download'></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="report__item ritem ritem_low">
-                                <div class="ritem__check">
-                                    <input type="checkbox">
-                                    <label>Отчет для ГП</label>
-                                </div>
-                                <div class="ritem__download">
-                                    <div class="ritem__pdf">
-                                        <a class="ritem__link" href="#">
-                                            <span>Скачать PDF</span>
-                                            <i class='bx bx-download'></i>
-                                        </a>
-                                    </div>
-                                    <div class="ritem__excel">
-                                        <a class="ritem__link" href="#">
-                                            <span>Скачать Excel</span>
-                                            <i class='bx bx-download'></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="report__item ritem">
-                                <div class="ritem__check">
-                                    <input type="checkbox">
-                                    <label>Отчет для ГП</label>
-                                </div>
-                                <div class="ritem__download">
-                                    <div class="ritem__pdf">
-                                        <a class="ritem__link" href="#">
-                                            <span>Скачать PDF</span>
-                                            <i class='bx bx-download'></i>
-                                        </a>
-                                    </div>
-                                    <div class="ritem__excel">
-                                        <a class="ritem__link" href="#">
-                                            <span>Скачать Excel</span>
-                                            <i class='bx bx-download'></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="report__download">
-                            <div class="button">
-                                Скачать PDF отчет
-                            </div>
-                            <div class="button">
-                                Скачать Excel отчет
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="main__col">
-                    <div class="report">
-                        <div class="report__check">
-                            <div class="checkbox"></div>
-                            <!--                            <i class='report__icon bx bx-lg bx-square'></i>-->
-                            <img class="report__icon" width="80" src="./assets/img/icon.svg" alt="icon">
-                            <!--                            <i class='report__icon bx bx-lg bx-collection'></i>-->
-                        </div>
-                        <div class="report__title">
-                            Грузовик с открытым кузовом Man TGS 18.320 4758B 8ш4ш <br> фывапро
-                        </div>
-                        <div class="report__item ritem">
-                            <div class="ritem__check">
-                                <input type="checkbox">
-                                <label>Отчет для ГП</label>
-                            </div>
-                            <div class="ritem__download">
-                                <div class="ritem__pdf">
-                                    <a class="ritem__link" href="#">
-                                        <span>Скачать PDF</span>
-                                        <i class='bx bx-download'></i>
-                                    </a>
-                                </div>
-                                <div class="ritem__excel">
-                                    <a class="ritem__link" href="#">
-                                        <span>Скачать Excel</span>
-                                        <i class='bx bx-download'></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="report__wrapper">
-                            <div class="report__counter rcounter">
-                                <div class="rcounter__check">
-                                    <div class="rcounter__left">
-                                        <input type="checkbox">
-                                        <label>
-                                            <b>Отчеты для паллет</b>
-                                            <i class='rcounter__arrow bx bx-chevron-up'></i>
-                                        </label>
-                                    </div>
-                                    <div class="rcounter__right">
-                                        <p>Выбрано 0</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="report__item ritem ritem_low">
-                                <div class="ritem__check">
-                                    <input type="checkbox">
-                                    <label>Отчет для ГП</label>
-                                </div>
-                                <div class="ritem__download">
-                                    <div class="ritem__pdf">
-                                        <a class="ritem__link" href="#">
-                                            <span>Скачать PDF</span>
-                                            <i class='bx bx-download'></i>
-                                        </a>
-                                    </div>
-                                    <div class="ritem__excel">
-                                        <a class="ritem__link" href="#">
-                                            <span>Скачать Excel</span>
-                                            <i class='bx bx-download'></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="report__item ritem ritem_low">
-                                <div class="ritem__check">
-                                    <input type="checkbox">
-                                    <label>Отчет для ГП</label>
-                                </div>
-                                <div class="ritem__download">
-                                    <div class="ritem__pdf">
-                                        <a class="ritem__link" href="#">
-                                            <span>Скачать PDF</span>
-                                            <i class='bx bx-download'></i>
-                                        </a>
-                                    </div>
-                                    <div class="ritem__excel">
-                                        <a class="ritem__link" href="#">
-                                            <span>Скачать Excel</span>
-                                            <i class='bx bx-download'></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="report__item ritem ritem_low">
-                                <div class="ritem__check">
-                                    <input type="checkbox">
-                                    <label>Отчет для ГП</label>
-                                </div>
-                                <div class="ritem__download">
-                                    <div class="ritem__pdf">
-                                        <a class="ritem__link" href="#">
-                                            <span>Скачать PDF</span>
-                                            <i class='bx bx-download'></i>
-                                        </a>
-                                    </div>
-                                    <div class="ritem__excel">
-                                        <a class="ritem__link" href="#">
-                                            <span>Скачать Excel</span>
-                                            <i class='bx bx-download'></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="report__item ritem ritem_low">
-                                <div class="ritem__check">
-                                    <input type="checkbox">
-                                    <label>Отчет для ГП</label>
-                                </div>
-                                <div class="ritem__download">
-                                    <div class="ritem__pdf">
-                                        <a class="ritem__link" href="#">
-                                            <span>Скачать PDF</span>
-                                            <i class='bx bx-download'></i>
-                                        </a>
-                                    </div>
-                                    <div class="ritem__excel">
-                                        <a class="ritem__link" href="#">
-                                            <span>Скачать Excel</span>
-                                            <i class='bx bx-download'></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="report__item ritem">
-                                <div class="ritem__check">
-                                    <input type="checkbox">
-                                    <label>Отчет для ГП</label>
-                                </div>
-                                <div class="ritem__download">
-                                    <div class="ritem__pdf">
-                                        <a class="ritem__link" href="#">
-                                            <span>Скачать PDF</span>
-                                            <i class='bx bx-download'></i>
-                                        </a>
-                                    </div>
-                                    <div class="ritem__excel">
-                                        <a class="ritem__link" href="#">
-                                            <span>Скачать Excel</span>
-                                            <i class='bx bx-download'></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="report__download">
-                            <div class="button">
-                                Скачать PDF отчет
-                            </div>
-                            <div class="button">
-                                Скачать Excel отчет
-                            </div>
-                        </div>
-                    </div>
-                    <div class="report">
-                        <div class="report__check">
-                            <div class="checkbox"></div>
-                            <!--                            <i class='report__icon bx bx-lg bx-square'></i>-->
-                            <img class="report__icon" width="80" src="./assets/img/icon.svg" alt="icon">
-                            <!--                            <i class='report__icon bx bx-lg bx-collection'></i>-->
-                        </div>
-                        <div class="report__title">
-                            Грузовик с закрытым кузовом Man TGS 18.320
-                        </div>
-                        <div class="report__item ritem">
-                            <div class="ritem__check">
-                                <input type="checkbox">
-                                <label>Отчет для ГП</label>
-                            </div>
-                            <div class="ritem__download">
-                                <div class="ritem__pdf">
-                                    <a class="ritem__link" href="#">
-                                        <span>Скачать PDF</span>
-                                        <i class='bx bx-download'></i>
-                                    </a>
-                                </div>
-                                <div class="ritem__excel">
-                                    <a class="ritem__link" href="#">
-                                        <span>Скачать Excel</span>
-                                        <i class='bx bx-download'></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="report__wrapper report__wrapper_closed">
-                            <div class="report__counter rcounter">
-                                <div class="rcounter__check">
-                                    <div class="rcounter__left">
-                                        <input type="checkbox">
-                                        <label>
-                                            <b>Отчеты для паллет</b>
-                                            <i class='rcounter__arrow rcounter__arrow_down bx bx-chevron-down'></i>
-                                        </label>
-                                    </div>
-                                    <div class="rcounter__right">
-                                        <p>Выбрано 0</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="report__download">
-                            <div class="button">
-                                Скачать PDF отчет
-                            </div>
-                            <div class="button">
-                                Скачать Excel отчет
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </main>
-</div>
+            </div>
+        </section>
+    </div>
+</main>
+
 </body>
 </html>
