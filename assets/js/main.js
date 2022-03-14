@@ -17,10 +17,12 @@ reports.forEach((report) => {
         if (e.target.checked === true) {
             checkboxes.forEach((checkbox) => {
                 checkbox.checked = true;
+                changed(report);
             });
         } else {
             checkboxes.forEach((checkbox) => {
                 checkbox.checked = false;
+                changed(report);
             });
         }
     });
